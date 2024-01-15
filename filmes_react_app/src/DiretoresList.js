@@ -1,4 +1,4 @@
-import { Datagrid, List, TextField } from 'react-admin';
+import { Datagrid, List, TextField, DateInput, Edit, SimpleForm, TextInput } from 'react-admin';
 
 export const DiretoresList = () => (
     <List>
@@ -8,4 +8,15 @@ export const DiretoresList = () => (
             <TextField source="date_of_birth" />
         </Datagrid>
     </List>
+);
+
+
+export const DiretoreEdit = () => (
+    <Edit>
+        <SimpleForm>
+            <TextInput source="id" />
+            <TextInput source="name" />
+            <DateInput source="date_of_birth" />
+        </SimpleForm>
+    </Edit>
 );

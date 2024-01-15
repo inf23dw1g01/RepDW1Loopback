@@ -1,4 +1,4 @@
-import { Datagrid, List, TextField } from 'react-admin';
+import { Datagrid, List, TextField, Edit, SimpleForm, TextInput } from 'react-admin';
 
 export const PersonagenList = () => (
     <List>
@@ -8,4 +8,14 @@ export const PersonagenList = () => (
             <TextField source="role" />
         </Datagrid>
     </List>
+);
+
+export const PersonagenEdit = () => (
+    <Edit>
+        <SimpleForm>
+            <TextInput source="id" />
+            <TextInput source="name" />
+            <TextInput source="role" />
+        </SimpleForm>
+    </Edit>
 );

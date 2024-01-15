@@ -1,7 +1,19 @@
-import { Datagrid, List, ReferenceField, TextField } from 'react-admin';
+import { Datagrid, List, Filter, SelectInput , ReferenceField, TextField,  DateInput, Edit, ReferenceInput, SimpleForm, TextInput, useRecordContext } from 'react-admin';
 
-export const FilmesList = () => (
-    <List>
+const PostTitle = () => {
+    const record = useRecordContext();
+    return record ? (<span>Filme {`"${record.name}"`}</span>):null
+}
+
+const PostFilter = (props) => <Filter {...props}>
+    <TextInput label="Search" source="nome" alwaysOn />
+    <ReferenceInput label = "Name" source = "diretoresId" reference="Diretores" allowEmpty>
+        <SelectInput optionText="description" />
+    </ReferenceInput>
+    </Filter >
+
+export const FilmesList = (props) => (
+    <List filters={<PostFilter />} {...props}>
         <Datagrid rowClick="edit">
             <TextField source="id" />
             <TextField source="name" />
@@ -10,4 +22,16 @@ export const FilmesList = () => (
             <ReferenceField source="diretoresId" reference="diretores" />
         </Datagrid>
     </List>
+);
+
+export const FilmeEdit = (props) => (
+    <Edit title={<PostTitle />} {...props}>
+        <SimpleForm>
+            <TextInput source="id" />
+            <TextInput source="name" />
+            <TextInput source="description" />
+            <DateInput source="ano" />
+            <ReferenceInput source="diretoresId" reference="diretores" />
+        </SimpleForm>
+    </Edit>
 );
