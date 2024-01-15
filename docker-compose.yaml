@@ -28,3 +28,19 @@ services:
             - 8080:3000
         stdin_open: true
         tty: true
+    react:
+        depends_on:
+            mysqldb:
+                condition: service_healthy
+        build:
+            context: ./filmes_react_app
+            dockerfile: dockerfile
+        working_dir: /app
+        container_name: filmesapi-react
+        restart: unless-stopped
+        env_file: ./.env
+        ports:
+            - 8081:3000
+        stdin_open: true
+        tty: true
+
