@@ -1,4 +1,9 @@
-import { Datagrid, List, TextField, DateInput, Edit, SimpleForm, TextInput } from 'react-admin';
+import { Datagrid, List, Filter, SelectInput , ReferenceField, TextField,  DateInput, Edit, ReferenceInput, SimpleForm, TextInput, useRecordContext  } from 'react-admin';
+
+const PostTitle = () => {
+  const record = useRecordContext();
+  return record ? (<span>Personagen {`"${record.name}"`}</span>):null
+}
 
 export const DiretoresList = () => (
     <List>
@@ -11,9 +16,9 @@ export const DiretoresList = () => (
 );
 
 
-export const DiretoreEdit = () => (
-    <Edit>
-        <SimpleForm>
+export const DiretoreEdit = (props) => (
+  <Edit title={<PostTitle />} {...props}>
+    <SimpleForm>
             <TextInput source="id" />
             <TextInput source="name" />
             <DateInput source="date_of_birth" />
