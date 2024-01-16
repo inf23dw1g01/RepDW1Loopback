@@ -1,4 +1,4 @@
-import { Datagrid, List, Filter, SelectInput , ReferenceField, TextField,  DateInput, Edit, ReferenceInput, SimpleForm, TextInput, useRecordContext } from 'react-admin';
+import { Datagrid, DateInput, Edit, Filter, List, ReferenceField, ReferenceInput, SelectInput, SimpleForm, TextField, TextInput, useRecordContext } from 'react-admin';
 
 const PostTitle = () => {
     const record = useRecordContext();
@@ -19,7 +19,7 @@ export const FilmesList = (props) => (
             <TextField source="name" />
             <TextField source="description" />
             <TextField source="ano" />
-            <ReferenceField source="diretoresId" reference="diretores" />
+            <ReferenceField source="diretoresId" reference="Diretores" />
         </Datagrid>
     </List>
 );
@@ -31,7 +31,7 @@ export const FilmeEdit = (props) => (
             <TextInput source="name" />
             <TextInput source="description" />
             <DateInput source="ano" />
-            <ReferenceInput source="diretoresId" reference="diretores" />
+            <ReferenceInput source="diretoresId" reference="Diretores" />
         </SimpleForm>
     </Edit>
 );
