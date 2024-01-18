@@ -64,7 +64,7 @@ LOCK TABLES `Personagens` WRITE;
 
 UNLOCK TABLES;
 
--- Adiciona valor em filmes
+
 INSERT INTO Filme (name, description, ano) VALUES ('Star Wars: Revenge Of The Sith', 'Plot. Orbiting above Coruscant, Obi-Wan Kenobi and Anakin Skywalker lead a mission to rescue Supreme Chancellor Palpatine from the cyborg Separatist commander General Grievous. After infiltrating Grievous'' flagship, Obi-Wan and Anakin battle the Sith Lord Count Dooku, whom Anakin decapitates.', '2005');
 INSERT INTO Filme (name, description, ano) VALUES ('Cars', 'Ao viajar para a Califórnia, o famoso carro de corridas Relâmpago McQueen se perde e vai parar em Radiator Springs, uma cidadezinha na Rota 66. Ele conhece novos amigos e aprende lições que mudam sua forma de encarar a vida.', '2006');
 INSERT INTO Filme (name, description, ano) VALUES ('Cars 2', 'Após ganhar a Copa Pistão pela quarta vez, Relâmpago McQueen (Owen Wilson) e sua equipe retornam a Radiator Springs para descansar.', '2011');
@@ -79,6 +79,28 @@ INSERT INTO Filme (name, description, ano) VALUES ('Mean Girls', 'A nova aluna C
 INSERT INTO Filme (name, description, ano) VALUES ('The Beekeeper', 'Em uma perigosa conspiração, Clay tem seu passado exposto para o mundo e, entre outros efeitos colaterais, acaba perdendo uma pessoa muito querida. ', '2023');
 INSERT INTO Filme (name, description, ano) VALUES ('Saltburn', 'A trama se passa nos anos 2000 e acompanha o estudante universitário Oliver Quick , que tem dificuldades para se encaixar na Universidade de Oxford.', '2021');
 INSERT INTO Filme (name, description, ano) VALUES ('Society of the Snow', 'Em 1972, um avião fretado para levar um time de rúgbi do Uruguai ao Chile sofre um acidente nos Andes.', '2023');
+INSERT INTO Filme (name, description, ano) VALUES ('Inception', 'Um ladrão especializado em roubar segredos corporativos pelo uso de compartilhamento de sonhos é oferecido a oportunidade de ter sua sentença reduzida se ele realizar a tarefa inversa: implantar uma ideia na mente de uma pessoa.', '2010');
+INSERT INTO Filme (name, description, ano) VALUES ('The Shawshank Redemption', 'Um banqueiro é condenado à prisão por um crime que não cometeu e faz amizade com outros prisioneiros durante duas décadas enquanto tenta provar sua inocência.', '1994');
+INSERT INTO Filme (name, description, ano) VALUES ('Pulp Fiction', 'Várias histórias interligadas exploram o mundo do crime em Los Angeles.', '1994');
+INSERT INTO Filme (name, description, ano) VALUES ('The Dark Knight', 'Batman enfrenta o Coringa, um criminoso psicopata que busca criar o caos em Gotham City.', '2008');
+INSERT INTO Filme (name, description, ano) VALUES ('Forrest Gump', 'A história de um homem com baixo QI que testemunha e influencia várias décadas da história dos Estados Unidos.', '1994');
+INSERT INTO Filme (name, description, ano) VALUES ('The Godfather', 'A saga de uma família mafiosa siciliana nos Estados Unidos, liderada pelo patriarca Vito Corleone.', '1972');
+INSERT INTO Filme (name, description, ano) VALUES ('Schindlers List', 'A história real de Oskar Schindler, um empresário alemão que salva a vida de mais de mil refugiados judeus durante o Holocausto.', '1993');
+INSERT INTO Filme (name, description, ano) VALUES ('The Matrix', 'Um hacker é recrutado para se juntar a uma rebelião contra máquinas que controlam a realidade simulada em que vivemos.', '1999');
+INSERT INTO Filme (name, description, ano) VALUES ('The Silence of the Lambs', 'Uma agente do FBI busca a ajuda de um psiquiatra canibal para capturar um assassino em série.', '1991');
+INSERT INTO Filme (name, description, ano) VALUES ('Fight Club', 'Um homem desiludido forma um clube secreto violento com um carismático saboneteiro.', '1999');
+INSERT INTO Filme (name, description, ano) VALUES ('The Lord of the Rings: The Fellowship of the Ring', 'Um grupo de personagens embarca em uma jornada épica para destruir um anel maligno e salvar a Terra Média.', '2001');
+INSERT INTO Filme (name, description, ano) VALUES ('The Avengers', 'Os super-heróis da Marvel se unem para enfrentar uma ameaça global.', '2012');
+INSERT INTO Filme (name, description, ano) VALUES ('Eternal Sunshine of the Spotless Mind', 'Um homem decide apagar as memórias de um relacionamento doloroso, apenas para perceber que as lembranças têm um valor especial.', '2004');
+INSERT INTO Filme (name, description, ano) VALUES ('The Grand Budapest Hotel', 'Um gerente de hotel e seu jovem protegido se envolvem em uma série de aventuras em um elegante hotel europeu.', '2014');
+INSERT INTO Filme (name, description, ano) VALUES ('Blade Runner', 'No futuro distópico, um detetive caça androides que se rebelaram contra seus criadores humanos.', '1982');
+INSERT INTO Filme (name, description, ano) VALUES ('Inglourious Basterds', 'Durante a Segunda Guerra Mundial, um grupo de soldados judeus americanos planeja assassinar líderes nazistas.', '2009');
+INSERT INTO Filme (name, description, ano) VALUES ('The Great Gatsby', 'A história de um homem misterioso e rico e seu envolvimento com a socialite Daisy Buchanan na década de 1920.', '2013');
+INSERT INTO Filme (name, description, ano) VALUES ('Interstellar', 'Exploradores espaciais buscam um novo lar para a humanidade enquanto enfrentam desafios científicos e emocionais.', '2014');
+INSERT INTO Filme (name, description, ano) VALUES ('The Revenant', 'Um caçador é deixado para morrer por seus colegas e luta por sobrevivência em condições adversas.', '2015');
+INSERT INTO Filme (name, description, ano) VALUES ('The Departed', 'Dois homens, um policial disfarçado e um espião, tentam identificar e eliminar o outro enquanto infiltrados em organizações criminosas rivais.', '2006');
+INSERT INTO Filme (name, description, ano) VALUES ('La La Land', 'Um músico e uma aspirante a atriz se apaixonam enquanto tentam alcançar seus sonhos em Los Angeles.', '2016');
+INSERT INTO Filme (name, description, ano) VALUES ('The Social Network', 'A criação e ascensão da rede social Facebook, destacando as disputas legais e pessoais entre os fundadores.', '2010');
 
 
 INSERT INTO Diretores (name, date_of_birth) VALUES ('Quentin Tarantino', '1963');
