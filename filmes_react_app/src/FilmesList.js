@@ -19,7 +19,7 @@ export const FilmesList = (props) => (
             <TextField source="name" />
             <TextField source="description" />
             <TextField source="ano" />
-            <ReferenceField source="diretoresId" reference="Diretores" />
+            <ReferenceField source="diretoresId" reference="diretores" />
         </Datagrid>
     </List>
 );
@@ -31,7 +31,7 @@ export const FilmeEdit = (props) => (
             <TextInput source="name" />
             <TextInput source="description" />
             <DateInput source="ano" />
-            <ReferenceInput source="diretoresId" reference="Diretores" />
+            <ReferenceInput source="diretoresId" reference="diretores" />
         </SimpleForm>
     </Edit>
 );
